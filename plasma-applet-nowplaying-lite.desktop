@@ -1,0 +1,23 @@
+[Desktop Entry]
+Name=Now Playing Lite
+Name[es]=Ahora suena (simple)
+
+Comment=Displays currently playing audio
+Comment[es]=Muestra el audio que se está reproduciendo actualmente
+
+Icon=applications-multimedia
+Type=Service
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-KDE-Library=plasma_applet_nowplaying_lite
+X-KDE-PluginInfo-Author=Alex Merry
+X-KDE-PluginInfo-Email=alex.merry@kdemail.net
+X-KDE-PluginInfo-Name=nowplaying-lite
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=
+X-KDE-PluginInfo-Category=Multimedia
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-Requires-FileDialog=Unused
+X-Plasma-Requires-LaunchApp=Unused
