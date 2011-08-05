@@ -24,6 +24,8 @@
 #include "nowplaying.h"
 #include "infopanel.h"
 
+#include <KDebug>
+
 #include <Plasma/Slider>
 
 #include <QGraphicsGridLayout>
@@ -219,7 +221,6 @@ void NowPlaying::dataUpdated(const QString &name,
     {
         m_title = metadata["Title"];
         m_artist = metadata["Artist"];
-
         m_artwork = data["Artwork"].value<QPixmap>();
         emit coverChanged(m_artwork);
         if(Plasma::ToolTipManager::self()->isVisible(this)) {
@@ -275,6 +276,7 @@ void NowPlaying::findPlayer()
     if (players.isEmpty()) {
         m_state = NoPlayer;
         m_watchingPlayer.clear();
+        delete m_controller;
         m_controller = 0;
 
         emit stateChanged(m_state);
